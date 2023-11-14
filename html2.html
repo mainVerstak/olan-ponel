@@ -24356,6 +24356,7 @@
 			position: absolute;
 		}
 	</style>
+
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
@@ -24488,7 +24489,7 @@
 					</a>
 				</div>
 				<div class="form-ponel">
-					<button class="form-ponel__button">
+					<button typee="button" class="form-ponel__button" data-toggle="modal" data-target="#modal-400">
 						<i class="fas fa-list"></i>
 					</button>
 
@@ -24624,44 +24625,53 @@
 							</ul>
 						</div>
 					</div>
-				</div>
-				<br>
-				<span class="search_control_action"></span>
-				<div class="form-group"><label>место</label>
-					<div class="btn-group">
-						<div class="btn btn-default get-search-locations-action dropdown-toggle" data-toggle="dropdown"
-							mode="single" style="min-width: 100px;"><span class="hidden-xs"><i class="fas fa-globe"></i>
-							</span><span class="title-search-locations-action">выбрать</span> <i class="caret"></i>
+					<div class="form-group">
+						<label>цена</label>
+						<div class="input-group">
+							<input autocomplete="off" class="form-control text-input-lg"
+								name="advertisement[price_from]" placeholder="от" style="margin-right: -1px;"
+								type="text">
+							<input autocomplete="off" class="form-control text-input-lg" name="advertisement[price_to]"
+								placeholder="до" type="text">
+							<span class="input-group-addon input-sm">
+								<i class="fas fa-ruble-sign"></i>
+							</span>
+						</div>
+					</div>
+					<div class="form-group-wrapper">
+						<div class="form-group">
+							<div class="description-group">
+								<input autocomplete="off" class="form-control" name="advertisement[description]"
+									placeholder="поиск по тексту или №" type="text">
+							</div>
+						</div>
+						<div class="form-group">
+							<label>место</label>
+							<div class="btn-group">
+								<div class="btn btn-default get-search-locations-action dropdown-toggle"
+									data-toggle="dropdown" mode="single" style="min-width: 100px;"><span
+										class="hidden-xs"><i class="fas fa-globe"></i>
+									</span><span class="title-search-locations-action">выбрать</span> <i
+										class="caret"></i>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="form-group"><label>цена</label>
-					<div class="input-group"> <input autocomplete="off" class="form-control text-input-lg"
-							name="advertisement[price_from]" placeholder="от" style="margin-right: -1px;"
-							type="text"><input autocomplete="off" class="form-control text-input-lg"
-							name="advertisement[price_to]" placeholder="до" type="text"><span
-							class="input-group-addon input-sm"><i class="fas fa-ruble-sign"></i></span></div>
+				<br>
+				<div class="form-group pull-right hidden-xs search_buttons">
+					<span class="add_search_link_block_action"></span>
+					<a class="btn btn-default map_search_btn">
+						<i class="far fa-map fa-lg"></i> На карте
+					</a>
+					<button class="btn btn-primary yaSend" style="width: 140px;" type="submit" yaparam="search">
+						<i class="fas fa-search fa-lg"></i>
+						Найти
+					</button>
 				</div>
-				<div class="btn-group" data-toggle="buttons"><label class="btn btn-xs btn-default"
-						yaparam="from_owner"><i class="fas fa-check yaSend"></i> <input name="advertisement[owner]"
-							type="checkbox" value="1">без
-						посредников</label></div> <span class="additional_search_categories_container_action"></span>
-				<span class="additional_search_subcategories_container_action"></span> <span
-					class="additional_search_params_container_action"></span> <span
-					class="additional_category_search_params_container_action"></span>
-				<div class="form-group"><label><i class="fas fa-tag"></i></label>
-					<div class="description-group"><input autocomplete="off" class="form-control"
-							name="advertisement[description]" placeholder="поиск по тексту или №" type="text"></div>
+				<div class="visible-xs"><input class="hidden" id="submitSearchForm" type="submit">
+					<span class="add_search_link_block_action"></span>
 				</div>
-				<div class="form-group pull-right hidden-xs search_buttons"><span
-						class="add_search_link_block_action"></span>
-					<a class="btn btn-default map_search_btn"><i class="far fa-map fa-lg"></i> На карте</a> <button
-						class="btn btn-primary yaSend" style="width: 140px;" type="submit" yaparam="search"><i
-							class="fas fa-search fa-lg"></i>
-						Найти</button>
-				</div>
-				<div class="visible-xs"><input class="hidden" id="submitSearchForm" type="submit"><span
-						class="add_search_link_block_action"></span></div>
 			</form>
 		</div>
 		<div class="result-container-action content-container"
@@ -27338,6 +27348,18 @@
 				</footer>
 			</div>
 		</footer>
+		<div class="modal modal-application fade" id="modal-400">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close js-remove-card" data-dismiss="modal">
+							<img src="img/exet-icon.svg" alt="">
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
 		<script>(function (d, w, c) { (w[c] = w[c] || []).push(function () { try { w.yaCounter28695786 = new Ya.Metrika({ id: 91087771, clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); } catch (e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script>
 		<noscript><img alt="" src="//mc.yandex.ru/watch/91087771" style="position:absolute; left:-9999px;" /></noscript>
 		<script>document.addEventListener("turbolinks:load", function (event) {
