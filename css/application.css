@@ -861,7 +861,7 @@
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- @font-face {
+ */@font-face {
  font-family:'FontAwesome';
  src:url("https://s.multilisting.su/assets/fontawesome-webfont-3d78fd66e6385a1011cd56add20d1c1a.eot?v=4.5.0");
  src:url("https://s.multilisting.su/assets/fontawesome-webfont-3d78fd66e6385a1011cd56add20d1c1a.eot?#iefix&v=4.5.0") format("embedded-opentype"),
@@ -872,7 +872,7 @@
  font-weight:normal;
  font-style:normal;
  font-display:swap
-}*/
+}
 .fa {
  display:inline-block;
  font:normal normal normal 14px/1 FontAwesome;
@@ -14872,23 +14872,8 @@ fieldset[disabled] .btn-vk.focus {
  max-height:95%
 }
 .card-pay_solo {
+ margin-top:10px;
  margin-bottom:20px
-}
-.card-pay-row {
- display:-webkit-box;
- display:-ms-flexbox;
- display:flex;
- -webkit-box-align:center;
- -ms-flex-align:center;
- align-items:center;
- margin-bottom:20px
-}
-.card-pay-row .card-pay {
- margin-right:20px;
- margin-bottom:0
-}
-.card-pay-row .card-pay:last-child {
- margin-right:0
 }
 @media only screen and (max-width: 479px) {
  .pay-box__head {
@@ -14915,69 +14900,5 @@ fieldset[disabled] .btn-vk.focus {
  .card-pay_solo {
   margin-right:auto;
   margin-left:auto
- }
- .card-pay-row {
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column
- }
- .card-pay-row .card-pay {
-  margin-right:0;
-  margin-left:0;
-  margin-bottom:10px
- }
- .card-pay-row .card-pay:last-child {
-  margin-bottom:0
- }
-}
-.apartment-desc {
- border-radius:3px;
- background:#F5F5F5;
- margin-bottom:30px
-}
-.apartment-desc__head {
- display:-webkit-box;
- display:-ms-flexbox;
- display:flex;
- -webkit-box-align:center;
- -ms-flex-align:center;
- align-items:center;
- -webkit-box-pack:justify;
- -ms-flex-pack:justify;
- justify-content:space-between;
- -ms-flex-wrap:wrap;
- flex-wrap:wrap;
- padding:10px;
- border-bottom:1px solid #DCDCDC;
- margin-bottom:8px
-}
-.apartment-desc__owner {
- color:#4A7443;
- margin:5px 0 5px 0
-}
-.apartment-desc__item {
- padding:4px 10px 4px 10px
-}
-.apartment-desc__bottom {
- padding:10px;
- border-top:1px solid #DCDCDC;
- margin-top:8px
-}
-@media only screen and (max-width: 1199px) {
- .apartment-top-container {
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column
- }
- .apartment-gallery {
-  margin-bottom:20px
- }
- .apartment-desc {
-  margin-bottom:20px
  }
 }
