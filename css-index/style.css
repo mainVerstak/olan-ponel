@@ -436,6 +436,7 @@
 		height: 38px;
 		font-weight: 600;
 		width: 160px !important;
+		line-height: 16px !important;
 	}
 
 	.searchFormPage .form-group.pull-right.hidden-xs.search_buttons .map_search_btn {
@@ -493,8 +494,49 @@
 		margin-right: 0;
 	}
 
+	.searchFormPage .modal-body.row div {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.searchFormPage .modal-body.row label {
+		/*flex: 0 0 100%;*/
+		margin-right: 6px;
+	}
+
+	.searchFormPage .modal-body.row .btn-group,
+	.searchFormPage .modal-body.row .input-group {
+		flex: 0 0 100%;
+	}
 
 
+	.searchFormPage .modal-body.row .btn {
+		height: 35px;
+		padding-left: 17px;
+		padding-right: 17px;
+		line-height: 30px;
+		font-size: 14px;
+		background: rgba(0, 0, 0, 0.06);
+		border-radius: 8px !important;
+		margin-right: 8px !important;
+		margin-bottom: 2px !important;
+	}
+
+	.searchFormPage .modal-body.row .fas.fa-check.yaSend {
+		margin-right: 4px;
+		margin-bottom: 2px;
+	}
+
+	.searchFormPage .input-group input {
+		height: 35px;
+		width: 100px !important;
+	}
+
+	.searchFormPage .input-group-addon {
+		height: 35px;
+		line-height: 25px;
+	}
 }
 
 
@@ -552,7 +594,69 @@
 }
 
 @media (max-width: 767px) {
-	/*body {
+	.searchFormPage {
 		display: none;
-	}*/
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================================================*/
+
+.baner {
+	padding: 15px;
+	height: 500px;
+	width: 280px;
+	display: inline-flex;
+	align-items: flex-end;
+	background-position: 30% 65% !important;
+	max-width: 100%;
+}
+
+.baner.baner_768 {
+	height: 280px;
+	width: 768px;
+	background-position: 65% 55% !important;
+	justify-content: flex-end;
+
+}
+
+.baner__wrapper {
+	background: #ffdd29;
+	padding: 17px;
+	border-radius: 8px;
+}
+
+.baner__title {
+	font-weight: 600;
+	font-size: 22px;
+	margin-bottom: 16px;
+	display: block;
+	text-align: center;
+}
+
+.baner__button {
+	height: 50px;
+	background: #161616;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	color: #fff !important;
+	font-weight: 600;
+	font-size: 18px;
+	text-decoration: none !important;
 }
