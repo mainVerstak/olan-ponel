@@ -1,3 +1,14 @@
+$(document).ready(function() {
+    $('.js-search').on('keyup', function() {
+        if ($(this).val().length > 0) {
+            $('.search-results').addClass('active');
+        } else {
+            $('.search-results').removeClass('active');
+        }
+    })
+})
+
+
 $(function () {
     "use strict";
     var sctollTop = $(window).scrollTop();
@@ -463,4 +474,9 @@ $(function () {
         }
         sumVal()
     }
+
+
+    
+
+
 });

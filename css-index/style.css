@@ -1,15 +1,5 @@
 @media (min-width: 767.1px) {
 
-	.searchFormPage {
-		background: #fff;
-		border: 0;
-		border-radius: 0;
-		box-shadow: none;
-		padding-left: 0;
-		padding-right: 0;
-		/*font-size: 0;*/
-	}
-
 
 	.form-header {
 		display: inline-flex;
@@ -428,7 +418,6 @@
 
 	.searchFormPage .form-group.pull-right.hidden-xs.search_buttons .btn-primary {
 		box-shadow: none;
-		background: #337ab7 !important;
 		border: 0;
 		outline: none;
 		border-radius: 7px;
