@@ -1,9 +1,10 @@
 $(document).ready(function() {
     $('.js-search').on('keyup', function() {
+        $_SELF = $(this);
         if ($(this).val().length > 0) {
-            $('.search-results').addClass('active');
+            $_SELF.parent().find('.search-results').addClass('active');
         } else {
-            $('.search-results').removeClass('active');
+            $_SELF.parent().find('.search-results').removeClass('active');
         }
     })
 })

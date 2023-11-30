@@ -62,3 +62,64 @@
     }
   }
 }
+
+.ds-btn__send {
+  border-radius: 3px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #337ab7 !important;
+  font-weight: 500 !important;
+  display: inline-flex;
+  align-items: center;
+  &:hover {
+    background: #265a88 !important;
+  }
+  i {
+    color: #fff !important;
+    margin-right: 6px !important;
+    display: inline !important;
+    font-size: 16px;
+  }
+}
+
+.ds-btn__search {
+  border-radius: 3px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500 !important;
+  
+  &:hover {
+    background: #265a88 !important;
+  }
+  i {
+    margin-right: 7px !important;
+    display: inline !important;
+    font-size: 16px;
+  }
+}
+
+.ds-location {
+  text-transform: lowercase;
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  font-size: 14px;
+  z-index: 5;
+}
+
+
+.ds-rooms .dropdown-toggle {
+  width: 140px !important;
+}
+
+.ds-modal__search {
+  display: block !important;
+  margin: 10px 0 20px;
+  div {
+    display: block !important;
+  }
+  input {
+    width: 100% !important;
+    height: 40px;
+  }
+}
