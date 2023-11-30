@@ -79,7 +79,7 @@
 		content: "";
 		display: block;
 		position: absolute;
-		left: 105px;
+		left: 84px;
 		top: 50%;
 		transform: translateY(-50%);
 		width: 10px;
@@ -92,7 +92,7 @@
 		background: none;
 		box-shadow: none;
 		border: 0;
-		width: 100px !important;
+		width: 80px !important;
 		height: 100%;
 		margin-left: 10px !important;
 		font-weight: 400;
@@ -216,7 +216,7 @@
 		/*padding-left: 15px;
 	padding-right: 15px;*/
 		position: relative;
-		width: 112px;
+		width: 90px;
 		border-radius: 3px 0 0 3px;
 		transition: all 0.3s;
 	}
@@ -232,7 +232,7 @@
 
 	.searchFormPage .categoryButtons .dropdown:last-child .dropdown-toggle {
 		border-radius: 0px;
-		width: 135px;
+		width: 125px;
 	}
 
 	.searchFormPage .offerTypeButtons .dropdown-toggle label,
@@ -501,7 +501,7 @@
 
 	.searchFormPage .modal-body.row .btn-group,
 	.searchFormPage .modal-body.row .input-group {
-		flex: 0 0 100%;
+		/* flex: 0 0 100%; */
 	}
 
 

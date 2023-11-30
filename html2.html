@@ -24471,29 +24471,7 @@
 							<div class="modal-body row">
 
 								<div class="ds-modal__search">
-									<div class="form-group" style="position: relative;">
-										<div class="description-group">
-											<input autocomplete="off" class="form-control js-search" name="advertisement[description]"
-												placeholder="Адрес, ЖК или другое" type="text">
-											<a href="#" class="ds-location">Местоположение</a>
-											<div class="search-results">
-												<ul>
-													<li>
-														<a href="#">
-															Московская улица
-															<span>жк Радужный</span>
-														</a>
-													</li>
-													<li>
-														<a href="#">
-															Московская улица
-															<span>жк Радужный</span>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
+									
 								</div>
 
 								<div class="btn-group" data-toggle="buttons">
@@ -24802,31 +24780,15 @@
 							</ul>
 						</div>
 					</div>
-					<div class="form-group offerTypeButtons ds-rooms">
-						<div class="dropdown">
-							<div class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
-								aria-expanded="false">
-								<label class="btn btn-default click_additional_search_params_action">
-									<input name="advertisement[property_type][]" type="checkbox" value="2">Кол-во комнат
-								</label>
-								<i class="fas fa-chevron-down"></i>
-							</div>
+					<!-- <div class="ds-form-rooms">
+						кол-во комнат
+						<input type="radio" >
+					</div> -->
 
-							<ul class="dropdown-menu">
-								<li>
-									<label class="btn btn-default click_additional_search_params_action">
-										<input name="advertisement[property_type][]" type="checkbox" value="1">1
-									</label>
-								</li>
-								<li>
-									<label class="btn btn-default click_additional_search_params_action">
-										<input name="advertisement[property_type][]" type="checkbox" value="2">2
-									</label>
-								</li>
-							</ul>
-						</div>
 
-					</div>
+					<div class="form-group offerTypeButtons ds-form-rooms"><label>Комнат</label> <div class="btn-group" data-toggle="buttons"><label class="btn btn-default click_additional_search_params_action active"><input name="advertisement[offer_type][]" type="checkbox" value="0">1</label><label class="btn btn-default click_additional_search_params_action"><input name="advertisement[offer_type][]" type="checkbox" value="2">2</label><label class="btn btn-default click_additional_search_params_action"><input name="advertisement[offer_type][]" type="checkbox" value="3">3</label></div></div>
+
+
 					<div class="form-group form-group-price">
 						<label>цена</label>
 						<div class="input-group">
@@ -24878,7 +24840,7 @@
 				<br>
 				<div class="form-group pull-right hidden-xs search_buttons">
 					<span class="add_search_link_block_action"></span>
-					<a class="btn btn-primary ds-btn__send yaSend" href="#">
+					<a class="btn btn-primary ds-btn__send ds-save-search yaSend" href="#">
 						<i class="far fa-check-circle"></i>
 						Сохранить поиск
 					</a>

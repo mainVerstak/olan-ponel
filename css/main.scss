@@ -123,3 +123,65 @@
     height: 40px;
   }
 }
+
+.ds-save-search {
+  background: transparent !important;
+  color: rgba(68, 68, 68, 0.8) !important;
+  text-shadow: none !important;
+  i {
+    color: rgba(68, 68, 68, 0.8) !important; 
+  }
+}
+
+
+.ds-save-search:hover {
+  color: rgba(68, 68, 68, 1) !important;
+  background: transparent !important;
+  i {
+    color: rgba(68, 68, 68, 1) !important;
+  }
+}
+
+.ds-form-rooms {
+  font-size: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  height: 40px;
+  padding-right: 5px;
+  display: inline-flex !important;
+  align-items: center !important;
+  label {
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .btn-group {
+    margin: 0;
+    vertical-align: top;
+  }
+  > label {
+    line-height: 40px;
+    margin: 0;
+  }
+  .click_additional_search_params_action {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px !important;
+    line-height: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+.modal-application {
+  .form-group {
+    margin-bottom: 10px !important;
+    > label {
+      margin-bottom: 6px;
+    }
+  }
+}
