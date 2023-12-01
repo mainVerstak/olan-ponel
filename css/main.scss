@@ -173,6 +173,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
   }
 }
 
@@ -185,3 +186,9 @@
     }
   }
 }
+
+.ds-form-rooms .click_additional_search_params_action.ds-btn-first {
+  width: auto;
+  padding: 0 8px;
+}
+
