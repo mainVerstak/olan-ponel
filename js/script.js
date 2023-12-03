@@ -2,11 +2,18 @@ $(document).ready(function() {
     $('.js-search').on('keyup', function() {
         $_SELF = $(this);
         if ($(this).val().length > 0) {
-            $_SELF.parent().find('.search-results').addClass('active');
+            $_SELF.parent().find('.dropdown-menu').addClass('active');
         } else {
-            $_SELF.parent().find('.search-results').removeClass('active');
+            $_SELF.parent().find('.dropdown-menu').removeClass('active');
         }
     })
+
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.js-search').length) {
+            $('.dropdown-menu').removeClass('active');
+        }
+    });
 })
 
 
@@ -85,6 +92,21 @@ $(function () {
             }
         });
     }
+
+
+    $('.js-input-price').on('keyup', function() {
+        var priceVal = $(this).val();
+        var $_SELF = $(this);
+        console.log(priceVal.length);
+        if (priceVal.length > 6 && priceVal.length < 9) {
+            $_SELF.addClass("small-text");
+        } else if (priceVal.length >= 9) {
+            $_SELF.addClass('very-small-text');
+        } else {
+            $_SELF.removeClass('very-small-text');
+            $_SELF.removeClass('small-text');
+        }
+    })
 
     $('.table-tariff2__show-all').on('click', function () {
         let $table = $(this).closest('.table-tariff2');

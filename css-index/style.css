@@ -354,6 +354,7 @@
 		color: #444;
 
 		display: none;
+		padding-right: 130px;
 	}
 
 	.searchFormPage .form-group-wrapper input::placeholder {
@@ -430,6 +431,7 @@
 		margin-left: 6px;
 		height: 38px;
 		font-weight: 600;
+		border-radius: 3px !important;
 		line-height: 16px !important;
 	}
 
@@ -442,7 +444,7 @@
 		margin-left: 6px;
 		height: 38px;
 		font-weight: 600;
-
+		border-radius: 3px !important;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
@@ -453,7 +455,8 @@
 	}
 
 	.searchFormPage .form-group.pull-right.hidden-xs.search_buttons .map_search_btn:hover {
-		color: rgba(68, 68, 68, 1);
+		/* color: rgba(68, 68, 68, 1); */
+		background: rgba(0,0,0,.1) !important;
 	}
 
 	.searchFormPage .form-group.pull-right.hidden-xs.search_buttons .map_search_btn i {
