@@ -197,11 +197,20 @@
 
 .modal-application {
   .form-group {
-    margin-bottom: 10px !important;
+    margin-bottom: 0 !important;
 
     >label {
       margin-bottom: 6px;
     }
+  }
+
+  .modal-lg {
+    width: 100%;
+    max-width: 1171px;
+  }
+
+  .searchFormPage .modal-body.row .btn {
+    background: transparent !important;
   }
 }
 
@@ -231,5 +240,225 @@
     font-size: 14px;
     color: rgba(0, 0, 0, .4);
     font-weight: 400;
+  }
+}
+
+
+.ds-modal__search {
+  .form-ponel {
+    display: flex !important;
+  }
+
+  div {
+    display: flex !important;
+  }
+}
+
+.ds-search-modal {
+  .form-ponel {
+    display: flex !important;
+  }
+
+  div {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+
+  .searchFormPage .offerTypeButtons .dropdown-toggle label,
+  .searchFormPage .categoryButtons .dropdown-toggle label {
+    padding-left: 6px;
+    font-size: 11.5px;
+  }
+
+  .searchFormPage .offerTypeButtons .dropdown-toggle {
+    width: 73px;
+  }
+
+  .ds-form-rooms label {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .searchFormPage .categoryButtons .dropdown-toggle {
+    width: 73px;
+  }
+
+  .searchFormPage .categoryButtons .dropdown:last-child .dropdown-toggle {
+    width: 105px;
+  }
+
+  .ds-form-rooms label {
+    font-size: 11px;
+  }
+
+  .ds-form-rooms .click_additional_search_params_action.ds-btn-first {
+    padding: 0 4px;
+  }
+
+  .ds-form-rooms .click_additional_search_params_action {
+    width: 23px;
+    height: 23px;
+  }
+
+  .ds-location {
+    font-size: 11px;
+    top: 12px;
+  }
+
+  .searchFormPage .form-group-wrapper input {
+    padding-right: 104px;
+    font-size: 11px;
+    padding-left: 6px;
+  }
+
+  .searchFormPage .form-ponel .form-group.form-group-price input {
+    width: 70px !important;
+    font-size: 11px !important;
+  }
+
+  .searchFormPage .form-ponel .form-group.form-group-price .input-group:before {
+    left: 75px;
+  }
+}
+
+.ds-location {
+  i {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .ds-location {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .ds-location span {
+    display: none;
+  }
+
+  .ds-location i {
+    display: flex;
+  }
+
+  .searchFormPage .form-group-wrapper input {
+    padding-right: 24px;
+  }
+
+  .searchFormPage .form-ponel .form-group.form-group-price input {
+    width: 39px !important;
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+
+  .form-ponel__button {
+    width: 33px;
+    flex: 0 0 33px;
+    margin-right: 5px;
+  }
+
+  .searchFormPage .offerTypeButtons .dropdown-toggle label,
+  .searchFormPage .categoryButtons .dropdown-toggle label {
+    padding-left: 4px;
+  }
+
+  .searchFormPage .offerTypeButtons .dropdown-toggle {
+    width: 70px;
+  }
+
+  .searchFormPage .categoryButtons .dropdown-toggle {
+    width: 68px;
+  }
+
+  .searchFormPage .categoryButtons .dropdown:last-child .dropdown-toggle label {
+    padding-left: 4px;
+  }
+
+  .searchFormPage .offerTypeButtons .dropdown-toggle>i,
+  .searchFormPage .categoryButtons .dropdown-toggle>i {
+    font-size: 10px;
+  }
+
+  .searchFormPage .categoryButtons .dropdown:last-child .dropdown-toggle {
+    width: 102px;
+  }
+
+  .searchFormPage .form-group-wrapper .form-group {
+    width: 125px;
+  }
+
+  .searchFormPage .form-ponel .form-group.form-group-price .input-group:before {
+    left: 40px;
+  }
+}
+
+
+.modal-application {
+  .form-group-wrapper.categoryButtons {
+    flex: 1;
+    height: 40px;
+  }
+
+  .form-group-price {
+    height: 40px;
+  }
+
+  .form-group {
+    .click_additional_search_params_action {
+      padding-left: 12px !important;
+    }
+
+    .btn-default {
+      background: transparent !important;
+    }
+  }
+
+  .js-search-results span {
+    margin-top: -13px;
+  }
+
+  .js-search-results {
+    padding-bottom: 16px !important;
+  }
+
+  .ds-form-rooms {
+    .click_additional_search_params_action {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      width: 30px !important;
+      height: 30px !important;
+      border-radius: 3px !important;
+      margin-right: 0 !important;
+
+      &.ds-btn-first {
+        width: auto !important;
+        padding: 0 5px !important;
+      }
+    }
+
+    .btn-group {
+      .btn-default {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .ds-form-rooms {
+    label {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+.ds-search-modal {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .modal-body.row .ds-search-modal .btn {
+    font-size: 11px;
   }
 }
