@@ -462,3 +462,16 @@
     font-size: 11px;
   }
 }
+
+.ds-search {
+  flex: 1 !important;
+  input.form-control {
+    height: 40px;
+  }
+}
+
+.form-group-price {
+  input.form-control {
+    height: 40px !important;
+  }
+}
