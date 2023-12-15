@@ -7,6 +7,8 @@ $(document).ready(function() {
             $_SELF.parent().find('.js-search-results').removeClass('active');
         }
         $_SELF.parent().find('.js-helper').removeClass('active');
+        $_SELF.parent().find('.badget').removeClass('active');
+
     })
 
 
@@ -14,6 +16,7 @@ $(document).ready(function() {
         if (!$(e.target).closest('.js-search').length) {
             $('.js-search-results').removeClass('active');
             $('.js-helper').removeClass('active');
+            $('.badget').removeClass('active');
         }
     });
 
@@ -22,6 +25,7 @@ $(document).ready(function() {
         $_SELF = $(this);
         if ($(this).val().length === 0) {
             $_SELF.parent().find('.js-helper').addClass('active');
+            $_SELF.parent().find('.badget').addClass('active');
         }
     })
 
