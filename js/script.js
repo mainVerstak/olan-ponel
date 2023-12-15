@@ -2,18 +2,40 @@ $(document).ready(function() {
     $('.js-search').on('keyup', function() {
         $_SELF = $(this);
         if ($(this).val().length > 0) {
-            $_SELF.parent().find('.dropdown-menu').addClass('active');
+            $_SELF.parent().find('.js-search-results').addClass('active');
         } else {
-            $_SELF.parent().find('.dropdown-menu').removeClass('active');
+            $_SELF.parent().find('.js-search-results').removeClass('active');
         }
+        $_SELF.parent().find('.js-helper').removeClass('active');
     })
 
 
     $(document).on('click', function(e) {
         if (!$(e.target).closest('.js-search').length) {
-            $('.dropdown-menu').removeClass('active');
+            $('.js-search-results').removeClass('active');
+            $('.js-helper').removeClass('active');
         }
     });
+
+
+    $('.js-search').on('click', function() {
+        $_SELF = $(this);
+        if ($(this).val().length === 0) {
+            $_SELF.parent().find('.js-helper').addClass('active');
+        }
+    })
+
+    $('.js-helper-close').on('click', function(event) {
+        event.preventDefault();
+        $(this).closest('.js-helper').removeClass('active');
+    })
+
+    $('.add-to-search').on('click', function(event) {
+        event.preventDefault();
+        const textSearch = $(this).text();
+        $(this).closest('.form-group').find('.js-search').val(textSearch);
+    })
+
 })
 
 

@@ -479,3 +479,52 @@
 .js-search-results {
   margin-top: 4px !important;
 }
+
+  .border-right-none {
+    border-right: none !important;
+  }
+
+.ds-helper {
+  margin-top: 4px;
+  &-content {
+    padding: 15px;
+  }
+  &-bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: -webkit-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
+    background-image: -o-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
+    background-image: linear-gradient(to bottom, #e8e8e8 0%, #f5f5f5 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE8E8E8', endColorstr='#FFF5F5F5', GradientType=0);
+    border-color: gainsboro;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
+  &.active {
+    display: block;
+  }
+}
+
+
+.add-to-search {
+  border: 0;
+  background: transparent;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+.ds-close {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: flex;
+  border-radius: 50%;
+  padding: 5px;
+  background: rgba(lightgrey,.6);
+}
