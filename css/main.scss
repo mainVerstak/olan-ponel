@@ -590,3 +590,34 @@
     flex-wrap: nowrap !important;
   }
 }
+
+
+#searchFormModal .modal-footer {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#searchFormModal .ds-search-save {
+  min-width: 100%;
+    margin-left: 0;
+    background: transparent !important;
+    border: 0;
+    box-shadow: 0 0 0;
+    margin-bottom: 15px;
+    color: lightgrey;
+    text-shadow: none !important;
+    color: rgba(68,68,68,.8) !important;
+    text-shadow: none !important;
+}
+
+
+#searchFormModal {
+  .modal-footer,
+  label {
+    .map_search_btn {
+      margin: 0 !important;
+      width: calc(50% - 6px) !important;
+    }
+  }
+  
+}
