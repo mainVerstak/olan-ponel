@@ -595,6 +595,7 @@
 #searchFormModal .modal-footer {
   flex-wrap: wrap;
   justify-content: space-between;
+  display: flex;
 }
 
 #searchFormModal .ds-search-save {
@@ -612,12 +613,11 @@
 
 
 #searchFormModal {
-  .modal-footer,
-  label {
-    .map_search_btn {
+  .modal-footer {
+    .map_search_btn,
+    label {
       margin: 0 !important;
       width: calc(50% - 6px) !important;
     }
   }
-  
 }
