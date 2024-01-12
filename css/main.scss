@@ -621,3 +621,11 @@
     }
   }
 }
+
+
+.ds-save-search {
+  transition: opacity .3s ease;
+  &.opacity-animate {
+    opacity: 0;
+  }
+}
