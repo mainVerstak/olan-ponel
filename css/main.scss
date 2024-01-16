@@ -607,11 +607,15 @@
 
 #searchFormModal {
   .modal-footer {
-    .map_search_btn {
+    .map_search_btn,
+    .list_search_btn
+     {
       margin: 0 !important;
       width: calc(42% - 6px) !important;
     }
-    label {
+    label,
+    .load_points_btn
+     {
       margin: 0 !important;
       width: calc(58% - 6px) !important;
     }
