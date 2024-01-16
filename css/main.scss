@@ -36,10 +36,12 @@
   border-top: 0;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
   border-radius: 0 0 7px 7px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
 
   &.active {
     opacity: 1;
@@ -63,7 +65,7 @@
       span {
         display: block;
         font-size: 14px;
-        color: rgba(0, 0, 0, .4);
+        color: rgba(0, 0, 0, 0.4);
       }
     }
   }
@@ -116,7 +118,6 @@
   z-index: 5;
 }
 
-
 .ds-rooms .dropdown-toggle {
   width: 140px !important;
 }
@@ -144,7 +145,6 @@
     color: rgba(68, 68, 68, 0.8) !important;
   }
 }
-
 
 .ds-save-search:hover {
   color: rgba(68, 68, 68, 1) !important;
@@ -176,7 +176,7 @@
     vertical-align: top;
   }
 
-  >label {
+  > label {
     line-height: 40px;
     margin: 0;
   }
@@ -194,12 +194,11 @@
   }
 }
 
-
 .modal-application {
   .form-group {
     margin-bottom: 0 !important;
 
-    >label {
+    > label {
       margin-bottom: 6px;
     }
   }
@@ -219,7 +218,6 @@
   padding: 0 8px;
 }
 
-
 .js-input-price {
   &.small-text {
     font-size: 12px !important;
@@ -238,11 +236,10 @@
   span {
     display: block;
     font-size: 14px;
-    color: rgba(0, 0, 0, .4);
+    color: rgba(0, 0, 0, 0.4);
     font-weight: 400;
   }
 }
-
 
 .ds-modal__search {
   .form-ponel {
@@ -265,7 +262,6 @@
 }
 
 @media (max-width: 1200px) and (min-width: 768px) {
-
   .searchFormPage .offerTypeButtons .dropdown-toggle label,
   .searchFormPage .categoryButtons .dropdown-toggle label {
     padding-left: 6px;
@@ -376,8 +372,8 @@
     padding-left: 4px;
   }
 
-  .searchFormPage .offerTypeButtons .dropdown-toggle>i,
-  .searchFormPage .categoryButtons .dropdown-toggle>i {
+  .searchFormPage .offerTypeButtons .dropdown-toggle > i,
+  .searchFormPage .categoryButtons .dropdown-toggle > i {
     font-size: 10px;
   }
 
@@ -393,7 +389,6 @@
     left: 40px;
   }
 }
-
 
 .modal-application {
   .form-group-wrapper.categoryButtons {
@@ -480,9 +475,9 @@
   margin-top: 4px !important;
 }
 
-  .border-right-none {
-    border-right: none !important;
-  }
+.border-right-none {
+  border-right: none !important;
+}
 
 .ds-helper {
   margin-bottom: 4px;
@@ -506,7 +501,6 @@
   }
 }
 
-
 .add-to-search {
   border: 0;
   background: transparent;
@@ -515,7 +509,6 @@
   }
 }
 
-
 .ds-close {
   padding: 0;
   border: 0;
@@ -523,7 +516,7 @@
   display: flex;
   border-radius: 50%;
   padding: 5px;
-  background: rgba(lightgrey,.6);
+  background: rgba(lightgrey, 0.6);
 }
 
 .js-search {
@@ -574,7 +567,7 @@
     display: none !important;
     &.active {
       display: flex !important;
-    } 
+    }
   }
 }
 
@@ -591,7 +584,6 @@
   }
 }
 
-
 #searchFormModal .modal-footer {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -600,31 +592,35 @@
 
 #searchFormModal .ds-search-save {
   min-width: 100%;
-    margin-left: 0;
-    background: transparent !important;
-    border: 0;
-    box-shadow: 0 0 0;
-    margin-bottom: 15px;
-    color: lightgrey;
-    text-shadow: none !important;
-    color: rgba(68,68,68,.8) !important;
-    text-shadow: none !important;
+  margin-left: 0;
+  background: transparent !important;
+  border: 0;
+  box-shadow: 0 0 0;
+  margin-bottom: 15px;
+  color: lightgrey;
+  color: rgba(68, 68, 68, 0.8) !important;
+  text-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 #searchFormModal {
   .modal-footer {
-    .map_search_btn,
+    .map_search_btn {
+      margin: 0 !important;
+      width: calc(42% - 6px) !important;
+    }
     label {
       margin: 0 !important;
-      width: calc(50% - 6px) !important;
+      width: calc(58% - 6px) !important;
     }
   }
 }
 
-
 .ds-save-search {
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
+
   &.opacity-animate {
     opacity: 0;
   }
