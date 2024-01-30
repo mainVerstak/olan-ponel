@@ -1,0 +1,1 @@
+(function(){requirejs(["bootstrap","jquery_ujs","jquery_nested_form","extend_utils"],function(){return requirejs(["main_module","turbolinks","container_module","fotorama_module","time_utils"])})}).call(this);
