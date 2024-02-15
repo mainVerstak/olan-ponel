@@ -162,6 +162,7 @@
 
 	.searchFormPage .dropdown {
 		display: inline-block;
+		vertical-align: top;
 	}
 
 	.searchFormPage .dropdown .dropdown-menu {
@@ -597,6 +598,16 @@
 }
 
 
+@media (min-width: 767px) {
+	.searchFormPage .dropdown-toggle label {
+		display: block !important;
+		white-space: nowrap;
+		width: 100% !important;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding-top: 9px;
+	}
+}
 
 
 
