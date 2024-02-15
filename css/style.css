@@ -5147,3 +5147,7 @@ label.input-label {
 		max-width: 275px;
 	}
 }
+
+.searchFormPage .dropdown-header {
+	margin: 0 !important;
+}
