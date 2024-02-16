@@ -668,3 +668,23 @@
 	font-size: 18px;
 	text-decoration: none !important;
 }
+
+@media (min-width: 767px) {
+	.searchFormPage .offerTypeButtons .dropdown-menu label, .searchFormPage .categoryButtons .dropdown-menu label {
+		display: flex;
+		align-items: center;
+	}
+	.searchFormPage .offerTypeButtons .dropdown-menu label, .searchFormPage .categoryButtons .dropdown-menu label.show-checkbox input {
+		display: block;
+		margin: 1px 5px 0 0;
+		max-width: inherit;
+		max-height: inherit;
+	}
+
+	.searchFormPage .dropdown-header {
+		padding: 3px 0 0 0;
+		font-size: 15px;
+		font-weight: 700;
+	}
+}
+
