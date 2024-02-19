@@ -688,3 +688,7 @@
 	}
 }
 
+
+.ds-search-modal .dropdown-toggle .btn {
+	line-height: 1.5 !important;
+}
