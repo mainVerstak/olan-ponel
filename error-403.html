@@ -29,16 +29,10 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 
-	<link rel="stylesheet" href="./css/new-css.css">
 	<link rel="stylesheet" href="./css/error-page.css">
 </head>
 
 <body>
-	<script>
-		//<![CDATA[
-		require(["application_module"], function () { require([]) });
-		//]]>
-	</script>
 	<div class="container">
 		<header>
 			<div class="header-top-nav header-top-nav_near">
@@ -46,10 +40,9 @@
 					<ul class="nav navbar-nav navbar-left" id="location-dropdown-in-header">
 						<li>
 							<div class="dropdown header-city">
-								<div aria-expanded="false" aria-haspopup="true"
-									class="dropdown-toggle header-city-btn get-search-locations-action" data-toggle="dropdown"
-									mode="single" type="button"><i class="fas fa-map-marker-alt"></i> Россия <span class="caret"></span>
-								</div>
+								<a href="https://olan.ru/" aria-expanded="false" aria-haspopup="true"
+									class="header-city-btn get-search-locations-action" ><i class="fas fa-map-marker-alt"></i> Россия <span class="caret"></span>
+								</a>
 							</div>
 						</li>
 					</ul>
@@ -67,41 +60,11 @@
 			</div>
 			<div class="navbar navbar-default navbar-small">
 				<div class="container-fluid">
-					<div class="navbar-header"><button class="navbar-toggle sidenav-button" type="button"><span
-								class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><span
+					<div class="navbar-header"><a href="https://olan.ru/" class="navbar-toggle sidenav-button" type="button"><span
+								class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><span
 							class="pull-left"><a class="navbar-brand" data-remote="" href="https://olan.ru/"><img
 									class="navbar-brand__logo" src="https://s.olan.ru/assets/olan-2e226bbb48ea97a46da40793d603b560.svg"
 									title="olan.ru"></a></span></div>
-					<nav class="sidenav loaded">
-						<div class="sidenav__inner">
-							<ul class="nav navbar-nav navbar-right">
-								<li class="nav navbar-nav"><a href="https://olan.ru/sign-in">
-										<div class="navbar-link"><i class="fas fa-sign-in-alt"></i> Войти</div>
-									</a></li>
-								<li class="nav navbar-nav"><a href="https://olan.ru/sign-up">
-										<div class="navbar-link"><i class="fas fa-user-plus"></i> Зарегистрироваться
-										</div>
-									</a></li>
-								<li class="nav navbar-nav">
-									<div class="navbar-btn nav-font-color"><a data-no-turbolink="true" href="https://olan.ru/estate-new">
-											<div class="btn btn-warning"><i class="fas fa-plus"></i> Подать объявление
-											</div>
-										</a></div>
-								</li>
-								<li class="sidenav__hide-desktop"><a href="https://olan.ru/"><i class="far fa-building"></i>
-										Недвижимость</a></li>
-								<li class="sidenav__hide-desktop"><a href="https://olan.ru/mortgage"><i class="fas fa-key"></i>
-										Ипотека</a></li>
-								<li class="sidenav__hide-desktop"><a href="https://olan.ru/tariffs"><i class="fas fa-coins"></i>
-										Тарифы</a></li>
-								<li class="sidenav__hide-desktop"><a href="https://olan.ru/xml"><i class="fa fa-code"></i> Пакетная
-										загрузка</a></li>
-								<li class="sidenav__hide-desktop"><a href="https://olan.ru/advertise"><i class="fa fa-bullhorn"></i>
-										Реклама на сайте</a></li>
-							</ul>
-						</div><button aria-label="Close" class="sidenav__close" type="button"><i class="fas fa-times"></i></button>
-					</nav>
-					<div class="sidenav-overlay"></div>
 				</div>
 			</div>
 		</header>
@@ -119,7 +82,6 @@
 				<footer class="footer">
 					<div class="footer__inner">
 						<div class="footer__left">
-							<div class="footer__copy">© 2007–2023</div>
 							<div class="footer__left-text">Электронная база недвижимости</div>
 						</div>
 						<nav class="footer__nav">
@@ -162,9 +124,6 @@
 									<li class="footer__nav-item"><a class="footer__nav-link" href="/contacts">Техподдержка
 											сайта</a></li>
 								</ul>
-								<div class="footer__social hidden">
-									<div class="footer__social-text">В соцсетях:</div>
-								</div>
 							</div>
 						</nav>
 					</div>
@@ -172,21 +131,6 @@
 			</div>
 		</footer>
 	</div>
-
-	<div class="btn-place-an-ad invisible"><a class="btn btn-warning btn-lg btn-place-an-ad__btn" target="_blank"
-			href="https://olan.ru/estate-new"><i class="fas fa-plus"></i> Подать объявление</a></div>
-	<div class="aside"></div>
-	<div style="position: fixed; left: -99px;">
-		<div id="06750eb9c0"><iframe frameborder="no" scrolling="no" allowtransparency="true" hidefocus="true" tabindex="-1"
-				marginwidth="0" marginheight="0"
-				name="%7B%22id%22%3A%2206750eb9c0%22%2C%22html%22%3A%22%3Cscript%3E%5C%22use%20strict%5C%22%3Bvar%20l%3D%5B%5C%22https%3A%2F%2Fyastatic.net%2Fq%2Fset%2Fs%2Frsya-tag-users%2Fbundle.js%5C%22%5D%2Cm%3D%2F%5E(%3F%3A(%3F%3Ahttps%3F%3A)%3F%5C%5C%2F%5C%5C%2F)%3F(%3F%3Aan%5C%5C.)%3Fyandex%5C%5C.%5Ba-z%5D%2B%5C%5C%2F%2Fgi%2Ct%3Dwindow.parent%3Bwindow.addEventListener(%5C%22message%5C%22%2Cfunction(e)%7Bif(%5C%22string%5C%22%3D%3Dtypeof%20e.data)try%7Bt%3DJSON.parse(e.data)%7Dcatch(e)%7Breturn%7Delse%20t%3De.data%3Bvar%20t%3D(e%3Dt%7C%7C%7B%7D).name%2Cn%3De.namespace%2Ca%3De.days%2Cr%3De.urls%2Ci%3De.adblockCountToXhr%2Co%3De.countToXhr%2Ce%3De.bundle%2Cs%3D%5C%22load_image%5C%22%3D%3D%3Dt%7C%7C%5C%22load_script%5C%22%3D%3D%3Dt%2Cn%3Dfunction(e%2Ct)%7Bif(t%26%26e)%7Be%3D%5C%22%5C%22.concat(e%2C%5C%22%3D1%5C%22)%3Bif(-1!%3D%3Ddocument.cookie.indexOf(e))return!1%3Bvar%20t%3D86400*t*1e3%2Cn%3Dnew%20Date%2Cn%3Dnew%20Date(Number(n)%2Bt).toUTCString()%3Bdocument.cookie%3D%5C%22%5C%22.concat(e%2C%5C%22%3B%20expires%3D%5C%22).concat(n%2C%5C%22%3B%20SameSite%3DNone%3B%20Secure%5C%22)%7Dreturn!0%7D(n%2Ca)%2Ca%3DArray.isArray(r)%26%260%3Cr.length%3Bif(s%26%26n%26%26a)if(%5C%22load_image%5C%22%3D%3D%3Dt)for(var%20c%3Dr%2Cd%3Di%2Cu%3Do%2Cp%3De%2Cf%3D0%3Bf%3Cc.length%3Bf%2B%2B)(u%26%26m.test(c%5Bf%5D)%7C%7C%5C%22adblock%5C%22%3D%3D%3Dp%26%26d%3Ffunction(e)%7Bvar%20t%3Dnew%20XMLHttpRequest%3Bt.open(%5C%22GET%5C%22%2Ce%2C!0)%2Ct.withCredentials%3D!0%2Ct.send()%7D%3Afunction(e)%7B(new%20Image).src%3De%7D)(c%5Bf%5D)%3Belse%5C%22load_script%5C%22%3D%3D%3Dt%26%26r.filter(function(e)%7Breturn%20l.includes(e)%7D).forEach(function(e)%7Breturn%20e%3De%2C(t%3Ddocument.createElement(%5C%22script%5C%22)).src%3De%2Cvoid%20document.body.appendChild(t)%3Bvar%20t%7D)%7D)%3Bfunction%20n(e)%7B%5C%22pagehide%5C%22%3D%3D%3De.type%26%26e.persisted%7C%7Ca%7C%7C(a%3D!0%2Ct.postMessage(%7Bname%3A%5C%22CONFIRM_FRAME_UNLOADED%5C%22%7D%2C%5C%22*%5C%22))%7Dvar%20a%3D!1%3B%5B%5C%22pagehide%5C%22%5D.forEach(function(e)%7Breturn%20window.addEventListener(e%2Cn)%7D)%2Ct.postMessage(%7Bname%3A%5C%22CONFIRM_FRAME_READY%5C%22%7D%2C%5C%22*%5C%22)%3B%3C%2Fscript%3E%22%2C%22pmGuid%22%3A%22_1699811185910_18_2%22%2C%22geom%22%3A%7B%22win%22%3A%7B%22t%22%3A0%2C%22l%22%3A0%2C%22w%22%3A1664%2C%22h%22%3A573%2C%22b%22%3A573%2C%22r%22%3A1664%7D%2C%22self%22%3A%7B%22t%22%3A8871%2C%22l%22%3A-99%2C%22b%22%3A8871%2C%22r%22%3A-99%2C%22w%22%3A0%2C%22h%22%3A0%2C%22xiv%22%3Anull%2C%22yiv%22%3Anull%2C%22iv%22%3Anull%2C%22z%22%3A0%7D%2C%22exp%22%3A%7B%22t%22%3A8871%2C%22l%22%3A0%2C%22r%22%3A1763%2C%22b%22%3A0%2C%22xs%22%3A0%2C%22ys%22%3A0%7D%7D%2C%22hasFocus%22%3Afalse%2C%22supports%22%3A%7B%22exp-ovr%22%3Atrue%2C%22exp-push%22%3Afalse%2C%22read-cookie%22%3Afalse%2C%22write-cookie%22%3Afalse%7D%2C%22css%22%3A%22%22%2C%22bg%22%3A%22transparent%22%2C%22posMeta%22%3A%7B%22sharedData%22%3A%7B%22sf_ver%22%3A%221-1-0%22%2C%22ck_o%22%3A1%2C%22flash_ver%22%3A0%7D%2C%22ownerKey%22%3A%22%22%2C%22privateData%22%3A%7B%7D%7D%2C%22target%22%3A%22_blank%22%2C%22basePath%22%3A%22%22%7D"
-				src="https://yastatic.net/safeframe-bundles/0.83/1-1-0/render.html" id="id3050" style="opacity: 0;"></iframe>
-		</div>
-	</div>
-
-
-	<script src="js/jquery.js"></script>
-	<script src="js/script.js"></script>
 </body>
 
 </html>
